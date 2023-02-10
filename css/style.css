@@ -6,9 +6,7 @@
 }
 
 body {
-    background: gray;
     overflow-y: hidden;
-
 }
 
 /* Barra de navegacion mobile - bootstrap */
@@ -33,7 +31,7 @@ body {
 
 .navbar-collapse {
     width: 100vh;
-    height: 100vh
+    height: 100vh    
 }
 
 .navbar-nav {
@@ -41,7 +39,7 @@ body {
 }
 
 .container-fluid {
-    background: rgba(0, 0, 0, .95);
+    background: rgba(0, 0, 0, .99);
 }
 
 .navbar {
@@ -66,4 +64,31 @@ color: white;
 
 .bg-body-tertiary {
     opacity: 2;
+}
+
+/* home - mobile */
+.home {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 100vh;
+    background:rgba(0, 0, 0, .99);
+    }
+
+.logo-home {
+    height: 250px;
+    border-radius: 50%;
+}
+
+.home-txt {
+    color: #03fa6e;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    
+    place-self: center;
+    
+    position: relative;
+    bottom: 85%;
 }
