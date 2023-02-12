@@ -1,5 +1,6 @@
 /* Importacion Fuente - Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+
 /* Reset css */
 * {
     margin: 0;
@@ -8,9 +9,9 @@
 }
 
 body {
-    font-family:'Carrois Gothic', sans-serif;
+    font-family: 'Carrois Gothic', sans-serif;
     overflow-y: hidden;
-    background-color:rgb(0, 0, 0) ; 
+    background-color: rgb(0, 0, 0);
 }
 
 footer {
@@ -50,7 +51,7 @@ footer {
 
 .navbar-collapse {
     width: 100vh;
-    height: 100vh    
+    height: 100vh
 }
 
 .navbar-nav {
@@ -58,7 +59,7 @@ footer {
 }
 
 .container-fluid {
-    background-color:rgb(0, 0, 0, 0.99);
+    background-color: rgb(0, 0, 0, 0.99);
 }
 
 .navbar {
@@ -77,8 +78,8 @@ footer {
 }
 
 .nav-link:hover {
-text-decoration: underline;
-color: white;
+    text-decoration: underline;
+    color: white;
 }
 
 .bg-body-tertiary {
@@ -90,9 +91,9 @@ color: white;
     display: grid;
     justify-content: center;
     align-items: center;
-    
+
     min-height: 100vh;
-    }
+}
 
 .logo-home {
     height: 250px;
@@ -104,9 +105,9 @@ color: white;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bolder;
-    
+
     place-self: center;
-    
+
     position: relative;
     bottom: 85%;
 }
@@ -175,6 +176,7 @@ color: white;
     justify-content: center;
     align-items: center;
 }
+
 /* contacto - mobile */
 
 .contacto {
@@ -186,7 +188,7 @@ label {
     margin: 8px 0;
     font-weight: bold;
     color: #03fa6ecb;
- }
+}
 
 .formulario {
     width: 100px;
@@ -194,7 +196,7 @@ label {
     position: relative;
     top: 10px;
     left: 10px;
- } 
+}
 
 .inputs-forms {
     padding: 6px;
@@ -202,27 +204,27 @@ label {
     width: 300px;
     border: 2px solid #03fa6e;
     font-size: 16px;
- }
+}
 
 .boton-forms {
     background-color: #03fa6e;
     color: black;
-    padding: 6px ;
+    padding: 6px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 300px;
     font-size: 16px;
     font-weight: bold;
- }
+}
 
- .text-contacto {
+.text-contacto {
     padding: 6px;
     margin: 8px 0;
     width: 300px;
     height: 100px;
     border: 2px solid #03fa6e;
-    font-size: 16px;  
+    font-size: 16px;
 }
 
 .redes-sociales {
@@ -244,4 +246,163 @@ label {
 .redes-icon {
     width: 60px;
     margin-top: 30%;
+}
+
+/* vista desktop */
+
+@media (min-width: 992px) {
+
+    body {
+        overflow-y: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    footer {
+        position: relative;
+        padding: 1em 0;
+        z-index: -10;
+        background: rgb(3, 3, 3);
+        text-align: center;
+        height: 80px;
+
+    }
+
+    /* navbar */
+    .navbar-collapse {
+        height: auto;
+        justify-content: flex-end;
+    }
+
+    /* titulos pages - desktop */
+    .titulo {
+        margin-top: 0%;
+    }
+
+    /* sobre-mi*/
+    .descripcion-sobre-mi {
+        margin-top: 5%;
+
+        font-size: 20px;
+    }
+
+    /* habilidades*/
+    .habilidades-titulo {
+        margin-top: 30px;
+    }
+
+    .habilidades {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 60vh;
+
+        margin-top: 10px;
+    }
+
+    /* contacto */
+
+    label {
+        display: block;
+        margin: 8px 0;
+        font-weight: bold;
+        color: #03fa6ecb;
+    }
+
+    .form{
+        position: relative;
+        left: 30%;
+
+    }
+
+    .inputs-forms {
+        padding: 12px;
+        margin: 8px 0;
+        width: 573px;
+        border: 2px solid #03fa6e;
+        font-size: 16px;
+    }
+
+    .boton-forms {
+        background-color: #03fa6e;
+        color: black;
+        padding: 12px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 573px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .text-contacto {
+        padding: 12px;
+        margin: 8px 0;
+        width: 573px;
+        height: 100px;
+        border: 2px solid #03fa6e;
+        font-size: 16px;
+    }
+
+    /* redes */
+
+    .redes-sociales {
+        margin-top: 15%;
+
+        text-transform: uppercase;
+        font-size: 25px;
+        color: #03fa6e;
+        text-align: center;
+
+    }
+
+    .redes {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 5%;
+
+    }
+
+    .redes-icon {
+        width: 50px;
+        margin-top: 30%;
+    }
+
+    /* home */
+    .home {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 40%;
+        grid-template-rows: 70%;
+    
+        min-height: 100vh;
+        text-align: center;        
+    }
+    
+    .logo-home {
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    .home-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .home-txt {
+        color: #03fa6e;
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: bolder;
+    
+        place-self: center;
+    }
+
 }
