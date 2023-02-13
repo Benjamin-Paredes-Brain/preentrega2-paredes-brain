@@ -20,7 +20,7 @@ footer {
     width: 100%;
     height: 60px;
     z-index: -10;
-    background: rgb(3, 3, 3);
+    background: rgb(0, 0, 0);
 }
 
 .footer-txt {
@@ -59,7 +59,7 @@ footer {
 }
 
 .container-fluid {
-    background-color: rgb(0, 0, 0, 0.99);
+    background-color: rgb(0, 0, 0);
 }
 
 .navbar {
@@ -98,18 +98,19 @@ footer {
 .logo-home {
     height: 250px;
     border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(3, 250, 110, 0.8);
 }
 
 .home-txt {
     color: #03fa6e;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
-
-    place-self: center;
+    text-shadow: 2px 2px rgba(3, 250, 110, 0.8);
+    letter-spacing: 1px;
 
     position: relative;
-    bottom: 85%;
+    bottom: 80%;
 }
 
 /* titulos pages - mobile */
@@ -154,27 +155,32 @@ footer {
 }
 
 /* habilidades - mobile */
-
-.habilidades-titulo {
-    margin: 30px;
-}
-
 .habilidades {
-    margin: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 60vh;
+
+    margin-top: 20%;
 }
 
 .logos-habilidades {
-    height: 100px;
+    height: 80px;
 }
 
 .div-habilidades {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+.texto-habilidades {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+    text-transform: uppercase;
 }
 
 /* contacto - mobile */
@@ -195,7 +201,7 @@ label {
     padding: 2px;
     position: relative;
     top: 10px;
-    left: 10px;
+    left: 30px;
 }
 
 .inputs-forms {
@@ -233,19 +239,32 @@ label {
     text-transform: uppercase;
     font-size: 25px;
     color: #03fa6e;
+    text-align: center;
 
 }
 
 .redes {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 }
 
 .redes-icon {
-    width: 60px;
-    margin-top: 30%;
+    width: 40px;
+    margin-top: 100%;
+}
+
+.p-redes {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+div a {
+    text-decoration: none;
 }
 
 /* vista desktop */
@@ -253,6 +272,7 @@ label {
 @media (min-width: 992px) {
 
     body {
+        overflow-x: hidden;
         overflow-y: auto;
         margin-left: 10%;
         margin-right: 10%;
@@ -266,7 +286,7 @@ label {
         position: relative;
         padding: 1em 0;
         z-index: -10;
-        background: rgb(3, 3, 3);
+        background: rgb(0, 0, 0);
         text-align: center;
         height: 80px;
 
@@ -280,20 +300,21 @@ label {
 
     /* titulos pages - desktop */
     .titulo {
-        margin-top: 0%;
+        margin-top: 5%;
+        text-align: center;
     }
 
     /* sobre-mi*/
     .descripcion-sobre-mi {
-        margin-top: 5%;
+        margin-top: 10%;
+        font-size: 25px;
+    }
 
-        font-size: 20px;
+    .sobre-mi {
+        margin-top: 0;
     }
 
     /* habilidades*/
-    .habilidades-titulo {
-        margin-top: 30px;
-    }
 
     .habilidades {
         display: grid;
@@ -302,6 +323,10 @@ label {
         height: 60vh;
 
         margin-top: 10px;
+    }
+
+    .texto-habilidades {
+        font-size: 20px;
     }
 
     /* contacto */
@@ -313,9 +338,13 @@ label {
         color: #03fa6ecb;
     }
 
-    .form{
+    .form {
         position: relative;
-        left: 30%;
+        left: 28%;
+
+        height: 55vh;
+        margin-top: 5%;
+        margin-bottom: 10%;
 
     }
 
@@ -354,10 +383,10 @@ label {
         margin-top: 15%;
 
         text-transform: uppercase;
-        font-size: 25px;
+        font-size: 30px;
         color: #03fa6e;
-        text-align: center;
-
+        display: flex;
+        justify-content: start;
     }
 
     .redes {
@@ -369,8 +398,16 @@ label {
     }
 
     .redes-icon {
-        width: 50px;
+        width: 45px;
         margin-top: 30%;
+    }
+
+    .p-redes {
+        margin: 0;
+        margin-top: 5px;
+        font-size: 17px;
+        color: white;
+        text-align: center;
     }
 
     /* home */
@@ -380,11 +417,11 @@ label {
         align-items: center;
         grid-template-columns: 40%;
         grid-template-rows: 70%;
-    
-        min-height: 100vh;
-        text-align: center;        
+
+        min-height: 50vh;
+        text-align: center;
     }
-    
+
     .logo-home {
         height: 300px;
         border-radius: 50%;
@@ -395,14 +432,15 @@ label {
         align-items: center;
         justify-content: center;
     }
-    
+
     .home-txt {
         color: #03fa6e;
         text-transform: uppercase;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: bolder;
-    
-        place-self: center;
+        text-shadow: 3px 3px rgba(3, 250, 110, 0.8);
+
+        text-align: center;
     }
 
 }
